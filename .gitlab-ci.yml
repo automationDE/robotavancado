@@ -16,11 +16,11 @@ WEB Testing in Chrome:
         - cat /etc/*-release
         - dnf upgrade -y >/dev/null && echo OK
         - dnf install -y python37 >/dev/null && echo OK
-        - dnf install -y chromium >/dev/null && echo OK
+        # - dnf install -y chromium >/dev/null && echo OK
         - dnf install -y chromedriver-stable >/dev/null && echo OK
         # - dnf install -y https://rpmfind.net/linux/fedora/linux/updates/31/Everything/x86_64/Packages/c/chromium-78.0.3904.87-1.fc31.x86_64.rpm >/dev/null && echo OK
         # - dnf install -y https://rpmfind.net/linux/fedora/linux/updates/31/Everything/x86_64/Packages/c/chromedriver-78.0.3904.87-1.fc31.x86_64.rpm >/dev/null && echo OK
-        - dnf upgrade -y chromium >/dev/null && echo OK
+        # - dnf upgrade -y chromium >/dev/null && echo OK
         - dnf install -y https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm >/dev/null && echo OK
         - chown root /usr/bin/chromedriver >/dev/null && echo OK
         - chmod +x /usr/bin/chromedriver >/dev/null && echo OK
