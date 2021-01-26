@@ -16,8 +16,8 @@ WEB Testing in Chrome:
         - cat /etc/*-release
         - dnf upgrade -y >/dev/null && echo OK
         - dnf install -y python37 >/dev/null && echo OK
-        - dnf install -y chromedriver >/dev/null && echo OK
-        - dnf install -y google-chrome-stable >/dev/null && echo OK
+        - dnf install -y https://fedora.pkgs.org/rawhide/fedora-x86_64/chromedriver-88.0.4324.96-1.fc34.x86_64.rpm.html >/dev/null && echo OK
+        - dnf install -y https://rpm.pkgs.org/universal/google-chrome-x86_64/google-chrome-stable-88.0.4324.96-1.x86_64.rpm.html >/dev/null && echo OK
         - chown root /usr/bin/chromedriver >/dev/null && echo OK
         - chmod +x /usr/bin/chromedriver >/dev/null && echo OK
         - chmod 755 /usr/bin/chromedriver >/dev/null && echo OK
