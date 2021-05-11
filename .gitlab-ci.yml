@@ -26,7 +26,6 @@ WEB Testing in Chrome:
         - python --version
         - google-chrome --version
         - chromedriver --version
-        - robot --version
     script:
         - robot -d ./results -v BROWSER:headlesschrome TestSitePractice.robot
 
