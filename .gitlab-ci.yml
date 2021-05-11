@@ -19,11 +19,12 @@ WEB Testing in Chrome:
         - dnf install -y fedora-workstation-repositories >/dev/null && echo OK
         - dnf install -y 'dnf-command(config-manager)' && dnf config-manager --set-enabled google-chrome >/dev/null && echo OK
         - dnf install -y google-chrome-stable >/dev/null && echo OK
-        - pip3 install webdrivermanager && webdrivermanager chrome
+        - pip3 install webdrivermanager && webdrivermanager chrome >/dev/null && echo OK
+        - pip3 install robotframework robotframework-seleniumlibrary | grep "Successfully installed"
+        - python --version
         - google-chrome --version
         - chromedriver --version
-        - python --version
-        - pip3 install robotframework robotframework-seleniumlibrary | grep "Successfully installed"
+        - robot --version
     script:
         - robot -d ./results -v BROWSER:headlesschrome TestSitePractice.robot
 
