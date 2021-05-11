@@ -17,11 +17,12 @@ WEB Testing in Chrome:
         - dnf upgrade -y >/dev/null && echo OK
         - dnf install -y python37 >/dev/null && echo OK
         - dnf install -y fedora-workstation-repositories >/dev/null && echo OK
-        - dnf install -y 'dnf-command(config-manager)' && dnf config-manager --set-enabled google-chrome
+        - dnf install -y 'dnf-command(config-manager)' && dnf config-manager --set-enabled google-chrome >/dev/null && echo OK
         - dnf install -y google-chrome-stable >/dev/null && echo OK
-        - dnf install -y chromedriver-stable >/dev/null && echo OK
+        # - dnf install -y chromedriver-stable >/dev/null && echo OK
         # - dnf install -y https://download-ib01.fedoraproject.org/pub/fedora/linux/development/rawhide/Everything/x86_64/os/Packages/c/chromedriver-90.0.4430.93-1.fc35.x86_64.rpm >/dev/null && echo OK
         # - dnf install -y http://dist.control.lth.se/public/Fedora-31/x86_64/google.x86_64/google-chrome-stable-90.0.4430.93-1.x86_64.rpm >/dev/null && echo OK
+        - pip3 install webdrivermanager && webdrivermanager chrome
         - chown root /usr/bin/chromedriver >/dev/null && echo OK
         - chmod +x /usr/bin/chromedriver >/dev/null && echo OK
         - chmod 755 /usr/bin/chromedriver >/dev/null && echo OK
