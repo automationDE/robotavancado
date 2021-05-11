@@ -21,7 +21,6 @@ WEB Testing in Chrome:
         - chown root /usr/bin/chromedriver >/dev/null && echo OK
         - chmod +x /usr/bin/chromedriver >/dev/null && echo OK
         - chmod 755 /usr/bin/chromedriver >/dev/null && echo OK
-        - chrome --version
         - chromedriver --version
         - python --version
         - pip3 install robotframework robotframework-seleniumlibrary | grep "Successfully installed"
